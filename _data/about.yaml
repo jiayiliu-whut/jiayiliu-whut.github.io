@@ -1,0 +1,42 @@
+# basic information
+name: Jiayi Liu
+profile-pic: assets/img/new_pic.jpg
+pronunciation: /kʰæŋ/
+pronunciation-emoji: 🎧
+
+# emoji indicator
+emoji: 🍀
+desc-emoji: four-leaf clover
+
+# social links
+scholar: https://scholar.google.com/citations?hl=zh-CN&user=8FxbzjEAAAAJ
+researchgate: https://www.researchgate.net/profile/Jiayi-Liu?ev=hdr_xprf
+github: https://github.com/jiayiliu-whut
+# youtube: https://www.youtube.com/@_m.khangg_
+# resume: assets/doc/Resume_KhangNguyen.pdf
+projects: show            # delete "show" or leave it blank to hide this icon
+location: https://maps.app.goo.gl/ChzvajkDzdL4RxEJ7
+codepen:
+# orcid: https://orcid.org/0000-0003-3471-5533
+contact: show            # delete "show" or leave it blank to hide this icon
+
+# information for contact card
+dept: School of Information Engineering
+lab: Artificial intelligence in robotic disassembly
+email: jyliu@whut.edu.cn
+phone: +86 13247149867
+website: http://wutinfo.whut.edu.cn/yjspy/dsjs/202112/t20211223_518625.shtml
+# web-dns: mkhangg.com
+
+# about me
+first-paragraph: I am an associate professor at the <hightlight>Artificial intelligence in robotic disassembly </hightlight> affiliated with the <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse" target="_blank" rel="noopener">Wuhan University of Technology.
+# second-paragraph: I grew up in <a href="https://en.wikipedia.org/wiki/Saigon" target="_blank" rel="noopener">Saigon, Vietnam</a>, and was fortunate to spend my most memorable time at the <a href="https://en.wikipedia.org/wiki/VNU-HCM_High_School_for_the_Gifted" target="_blank" rel="noopener">VNU-HCM High School for the Gifted</a> (informatics program of 2020) and previously <a href="https://en.wikipedia.org/wiki/Tr%E1%BA%A7n_%C4%90%E1%BA%A1i_Ngh%C4%A9a_High_School_for_the_Gifted" target="_blank" rel="noopener">TĐN Secondary School for the Gifted</a> (mathematics program of 2017) with very good friends - too many to name them here, where we played football (soccer) on concrete fields together afterschool.
+# research-introduction: I do research in robotics, mainly focusing on applying <code>cognitive architectures to robotic grasping</code> to enable robots with a closely similar human grasping capability. Just imagine the robot enters the kitchen, finds a banana, grasps without crushing it, and brings it back to you.
+
+research-interests:
+
+  - field: Robotic Perception
+    subfields: semantic scene understanding, perception for grasping
+  
+  - field: Robotic Manipulation
+    subfields: learning to grasp, manipulative visual-motor skills
