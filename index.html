@@ -1,666 +1,671 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
+<head>
 
-        <!-- Metadata -->
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <meta name="description" content="website"/>
-        <meta name="author" content="khang nguyen"/>
-        <title>Jiayi Liu at Wuhan University of Technology</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/photo.jpg"/>
-        
-        <!-- Font Awesome icons -->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
-		
-        <!-- Google fonts-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Metadata -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="website"/>
+    <meta name="author" content="khang nguyen"/>
+    <title>Jiayi Liu at Wuhan University of Technology</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/photo.jpg"/>
 
-        <!-- Core theme CSS -->
-        <link href="styles/styles.css" rel="stylesheet"/>
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
 
-    </head>
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-    <body>
+    <!-- Core theme CSS -->
+    <link href="styles/styles.css" rel="stylesheet"/>
 
-        <!-- Moving particles -->
-        <canvas id="canvas"></canvas>
+</head>
 
-        <!-- Progress bar on top -->
-        <div class="progress-bar-container">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>
+<body>
 
-        <!-- Back to top button -->
-        <a id="back-to-top-button"></a>
+<!-- Moving particles -->
+<canvas id="canvas"></canvas>
 
-        <!-- Toggle dark/light theme button -->
-        <button class="toggle-theme-button" onclick="toggleTheme()">☀️</button>
-        
-        <!-- Dismissal area for assistant icon -->
-        <div class="dismissal-area" id="dismissalArea">&#10006;</div>
+<!-- Progress bar on top -->
+<div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
 
-        <!-- Navigation bar -->
-        <!-- Fusion of jQuery slidebar (https://codepen.io/BeshoyRomany/pen/qmNPwN) and animated hamburger menu (https://codepen.io/amberweinberg/pen/yeqJgG) -->
-        <nav>
-            <a class="nav-toggle-btn" onclick="toggleNav()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <ul>
-                <li><p onclick="scrollToTopDiv('html')"><span class="emoji">🏡</span> <span class="text">团队主页</span></p></li>
-                <li><p onclick="scrollToTopDiv('#team_news')"><span class="emoji">📰️</span> <span class="text">团队新闻</span></p></li>
-                <li><p onclick="scrollToTopDiv('#research_video')"><span class="emoji">🎬️</span> <span class="text">成果视频</span></p></li>
-                <li><p onclick="scrollToTopDiv('#research')"><span class="emoji">📚</span> <span class="text">学术成果</span></p></li>
-                <li><p onclick="scrollToTopDiv('#gallery')"><span class="emoji">🧑‍🤝‍🧑</span> <span class="text">团队成员</span></p></li>
-            </ul>
-        </nav>
+<!-- Back to top button -->
+<a id="back-to-top-button"></a>
 
-        <!-- Content -->
-        <div class="container" style="padding-top: 3rem;">
-            <!-- About section -->
-            <h2>
-            Artificial Intelligence for Robotic Disassembly (AI4RD)
+<!-- Toggle dark/light theme button -->
+<button class="toggle-theme-button" onclick="toggleTheme()">☀️</button>
+
+<!-- Dismissal area for assistant icon -->
+<div class="dismissal-area" id="dismissalArea">&#10006;</div>
+
+<!-- Navigation bar -->
+<!-- Fusion of jQuery slidebar (https://codepen.io/BeshoyRomany/pen/qmNPwN) and animated hamburger menu (https://codepen.io/amberweinberg/pen/yeqJgG) -->
+<nav>
+    <a class="nav-toggle-btn" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <ul>
+        <li><p onclick="scrollToTopDiv('html')"><span class="emoji">🏡</span> <span class="text">团队主页</span></p></li>
+        <li><p onclick="scrollToTopDiv('#team_news')"><span class="emoji">📰️</span> <span class="text">团队新闻</span></p></li>
+        <li><p onclick="scrollToTopDiv('#research_video')"><span class="emoji">🎬️</span> <span class="text">成果视频</span></p></li>
+        <li><p onclick="scrollToTopDiv('#research')"><span class="emoji">📚</span> <span class="text">学术成果</span></p></li>
+        <li><p onclick="scrollToTopDiv('#gallery')"><span class="emoji">🧑‍🤝‍🧑</span> <span class="text">团队成员</span></p></li>
+    </ul>
+</nav>
+
+<!-- Content -->
+<div class="container" style="padding-top: 3rem;">
+    <!-- About section -->
+    <h2>
+        Artificial Intelligence for Robotic Disassembly (AI4RD)
+        <p></p>
+    </h2>
+    <div class="row mb-4">
+        <div class="col-lg-2 col-md-4">
+            <div class="ring-container">
+                <div class="ring">
+                    <div class="hollow-ring">
+                        <img class="profile-image" src="assets/img/photo.jpg" alt="Jiayi Liu" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="social-icons">
+                <a class="social-icon" href="https://scholar.google.com/citations?hl=zh-CN&user=8FxbzjEAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="fa fa-graduation-cap" style="font-size: 35px; color: #4285f4"></i></a>
+                <a class="social-icon" href="https://www.researchgate.net/profile/Jiayi-Liu?ev=hdr_xprf" target="_blank" rel="noopener" title="ResearchGate"><i class="fab fa-researchgate" style="font-size: 35px; color: #00D0BB"></i></a>
+            </div>
             <p></p>
-            </h2>
-<div class="row mb-4">
-    <div class="col-lg-2 col-md-4">
-        <div class="ring-container">
-            <div class="ring">
-                <div class="hollow-ring">
-                    <img class="profile-image" src="assets/img/photo.jpg" alt="Jiayi Liu" />
+        </div>
+
+        <!-- Inspired by Thanh Tran -- https://codepen.io/thanhrossi/pen/pvOEzq -->
+        <!-- Re-written, redesigned, and integrated (from HTML (Pug) and CSS (Less) to pure HTML and CSS) -->
+        <div class="contact-card-overlay" id="overlay-bg">
+            <div class="information_card">
+                <div id="front_end_card">
+                    <div class="front">
+                        <div class="contact-info-card">
+                            <div class="code-line"><span class="line-number">1</span><span class="code-content"><span class="keyword">class</span> <span class="namespace">ContactInformationCard</span>: </span></div>
+                            <div class="code-line"><span class="line-number">2</span><span class="code-content">  <span class="keyword">def</span> <span class="function">__init__</span>(<span class="self">self</span>):</span></div>
+                            <div class="code-line"><span class="line-number">3</span><span class="code-content">    <span class="self">self</span>.<span class="self">dept</span>  = <span class="string">"cse @ uta"</span> </span></div>
+                            <div class="code-line"><span class="line-number">4</span><span class="code-content">    <span class="self">self</span>.<span class="self">lab</span>   = <span class="string">"learn lab @ erb 128"</span> </span></div>
+                            <div class="code-line"><span class="line-number">5</span><span class="code-content">    <span class="self">self</span>.<span class="self">email</span> = <span class="string">"khang.nguyen@uta.edu"</span> </span></div>
+                            <div class="code-line"><span class="line-number">6</span><span class="code-content">    <span class="self">self</span>.<span class="self">phone</span> = <span class="string">"+1 (470) 815-5812"</span> </span></div>
+                            <div class="code-line"><span class="line-number">7</span><span class="code-content"></span></div>
+                            <div class="code-line"><span class="line-number">8</span><span class="code-content">  <span class="keyword">def</span> <span class="function">flipCard</span>(<span class="self">self</span>):</span></div>
+                            <div class="code-line"><span class="line-number">9</span><span class="code-content">    <span class="function">print</span>(<span class="string">"tap on the card to flip."</span>)</span></div>
+                            <div class="code-line"><span class="line-number">10</span><span class="code-content"></span></div>
+                            <div class="code-line"><span class="line-number">11</span><span class="code-content">  <span class="keyword">def</span> <span class="function">closeCard</span>(<span class="self">self</span>):</span></div>
+                            <div class="code-line"><span class="line-number">12</span><span class="code-content">    <span class="function">print</span>(<span class="string">"tap outside to close it."</span>)</span></div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="contact-info-card">
+                            <p class="card-name">Jiayi Liu</p>
+                            <a href="" target="_blank" rel="noopener" class="card-website-link" title="Website">mkhangg.com</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <hr />
-        <div class="social-icons">
-             <a class="social-icon" href="https://scholar.google.com/citations?hl=zh-CN&user=8FxbzjEAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="fa fa-graduation-cap" style="font-size: 35px; color: #4285f4"></i></a>
-             <a class="social-icon" href="https://www.researchgate.net/profile/Jiayi-Liu?ev=hdr_xprf" target="_blank" rel="noopener" title="ResearchGate"><i class="fab fa-researchgate" style="font-size: 35px; color: #00D0BB"></i></a>
-        </div>
-        <p></p>
-    </div>
+        <div class="col-lg-10 col-md-8">
+            <h5>
+                刘佳宜（Jiayi Liu）
+            </h5>
+            <p></p>
+            <a href="http://wutinfo.whut.edu.cn/yjspy/dsjs/202112/t20211223_518625.shtml" target="_blank" rel="noopener">武汉理工大学电子信息工程系</a>副教授，博士/硕士生导师，长期从事于机器人智能拆解领域的研究工作。主持国家自然科学基金1项、湖北省自然科学基金1项和武汉市知识创新专项（曙光计划）1项；作为骨干成员参与国家自然科学基金面上项目等国家级项目5项。<a href="https://rst.hubei.gov.cn/bmdt/ztzl/ywzl/jlsf/gsgg_/202602/t20260227_5881249.shtml">荣获湖北省教学成果奖特等奖</a>，已发表SCI/EI论文20余篇，<a href="https://scholar.google.com/citations?hl=zh-CN&user=8FxbzjEAAAAJ" target="_blank" rel="noopener">Google学术引用1700余次</a>；参与编写英文学术专著3部。受邀在国际、国内学术会议上作受邀报告多次；荣获2022 IEEE CASE等国际会议论文奖励3次。
+            <p></p>
+            担任国家自然科学基金函评专家、教育部学位论文评审专家、数字孪生青年学者委员会（中国）第一届委员会常务委员、国际研讨会的共同主席/委员会成员5届次，IEEE Transactions on Industrial Informatics、IEEE Transactions on Automation Science and Engineering等国际顶级期刊审稿人。
+            所承担的科研、教学工作，获<b>中央广播电视总台央视新闻</b>报道多次（<a href="https://content-static.cctvnews.cctv.com/snow-book/video.html?item_id=6241270088001979217&t=1687795240878&toc_style_id=video_default&share_to=wechat&track_id=6066a458-8b6f-4693-b03b-6ad42a2f0a34" target="_blank" rel="noopener">数字化赋能-让教与学更智慧</a>；<a href="https://content-static.cctvnews.cctv.com/snow-book/video.html?item_id=579093273305974350&toc_style_id=video_default&share_to=wechat&track_id=923676db-dd94-4984-9b52-28f2387efc79" target="_blank" rel="noopener">科技创新-让生活更美好</a>）。
 
-    <!-- Inspired by Thanh Tran -- https://codepen.io/thanhrossi/pen/pvOEzq -->
-    <!-- Re-written, redesigned, and integrated (from HTML (Pug) and CSS (Less) to pure HTML and CSS) -->
-    <div class="contact-card-overlay" id="overlay-bg">
-        <div class="information_card">
-            <div id="front_end_card">
-                <div class="front">
-                    <div class="contact-info-card">
-                        <div class="code-line"><span class="line-number">1</span><span class="code-content"><span class="keyword">class</span> <span class="namespace">ContactInformationCard</span>: </span></div>
-                        <div class="code-line"><span class="line-number">2</span><span class="code-content">  <span class="keyword">def</span> <span class="function">__init__</span>(<span class="self">self</span>):</span></div>
-                        <div class="code-line"><span class="line-number">3</span><span class="code-content">    <span class="self">self</span>.<span class="self">dept</span>  = <span class="string">"cse @ uta"</span> </span></div>
-                        <div class="code-line"><span class="line-number">4</span><span class="code-content">    <span class="self">self</span>.<span class="self">lab</span>   = <span class="string">"learn lab @ erb 128"</span> </span></div>
-                        <div class="code-line"><span class="line-number">5</span><span class="code-content">    <span class="self">self</span>.<span class="self">email</span> = <span class="string">"khang.nguyen@uta.edu"</span> </span></div>
-                        <div class="code-line"><span class="line-number">6</span><span class="code-content">    <span class="self">self</span>.<span class="self">phone</span> = <span class="string">"+1 (470) 815-5812"</span> </span></div>
-                        <div class="code-line"><span class="line-number">7</span><span class="code-content"></span></div>
-                        <div class="code-line"><span class="line-number">8</span><span class="code-content">  <span class="keyword">def</span> <span class="function">flipCard</span>(<span class="self">self</span>):</span></div>
-                        <div class="code-line"><span class="line-number">9</span><span class="code-content">    <span class="function">print</span>(<span class="string">"tap on the card to flip."</span>)</span></div>
-                        <div class="code-line"><span class="line-number">10</span><span class="code-content"></span></div>
-                        <div class="code-line"><span class="line-number">11</span><span class="code-content">  <span class="keyword">def</span> <span class="function">closeCard</span>(<span class="self">self</span>):</span></div>
-                        <div class="code-line"><span class="line-number">12</span><span class="code-content">    <span class="function">print</span>(<span class="string">"tap outside to close it."</span>)</span></div>
-                    </div>
-                </div>
-                <div class="back">
-                    <div class="contact-info-card">
-                        <p class="card-name">Jiayi Liu</p>
-                        <a href="" target="_blank" rel="noopener" class="card-website-link" title="Website">mkhangg.com</a>
-                    </div>
-                </div>
+            <p></p>
+            <div class="codebox">
 
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-10 col-md-8">
-        <h5>
-            刘佳宜（Jiayi Liu）
-        </h5>
-        <p></p>
-        <a href="http://wutinfo.whut.edu.cn/yjspy/dsjs/202112/t20211223_518625.shtml" target="_blank" rel="noopener">武汉理工大学电子信息工程系</a>副教授，博士/硕士生导师，长期从事于机器人智能拆解领域的研究工作。主持国家自然科学基金1项、湖北省自然科学基金1项和武汉市知识创新专项（曙光计划）1项；作为骨干成员参与国家自然科学基金面上项目等国家级项目5项。<a href="https://rst.hubei.gov.cn/bmdt/ztzl/ywzl/jlsf/gsgg_/202602/t20260227_5881249.shtml">荣获湖北省教学成果奖特等奖</a>，已发表SCI/EI论文20余篇，<a href="https://scholar.google.com/citations?hl=zh-CN&user=8FxbzjEAAAAJ" target="_blank" rel="noopener">Google学术引用1700余次</a>；参与编写英文学术专著3部。受邀在国际、国内学术会议上作受邀报告多次；荣获2022 IEEE CASE等国际会议论文奖励3次。
-        <p></p>
-        担任国家自然科学基金函评专家、教育部学位论文评审专家、数字孪生青年学者委员会（中国）第一届委员会常务委员、国际研讨会的共同主席/委员会成员5届次，IEEE Transactions on Industrial Informatics、IEEE Transactions on Automation Science and Engineering等国际顶级期刊审稿人。
-        所承担的科研、教学工作，获<b>中央广播电视总台央视新闻</b>报道多次（<a href="https://content-static.cctvnews.cctv.com/snow-book/video.html?item_id=6241270088001979217&t=1687795240878&toc_style_id=video_default&share_to=wechat&track_id=6066a458-8b6f-4693-b03b-6ad42a2f0a34" target="_blank" rel="noopener">数字化赋能-让教与学更智慧</a>；<a href="https://content-static.cctvnews.cctv.com/snow-book/video.html?item_id=579093273305974350&toc_style_id=video_default&share_to=wechat&track_id=923676db-dd94-4984-9b52-28f2387efc79" target="_blank" rel="noopener">科技创新-让生活更美好</a>）。
-
-        <p></p>
-        <div class="codebox">
-            
                 <b>机器人拆解:</b> 拆解感知、建模、决策、优化与控制理论及方法
                 <br />
-            
+
                 <b>人工智能算法:</b> 深度学习、强化学习、大语言模型在先进制造中的应用
                 <br />
 
                 <b>绳驱软体机器人及其应用:</b> 基于嵌入式的绳驱软体机器人设计、软体机器人在智能制造中的应用<a href="assets/researchvideo/softrobotics.mp4" target="_blank">[MP4]</a>
                 <br />
-            
+
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Research section -->
-            <hr />
+    <!-- Research section -->
+    <hr />
 
-            <div class="row" id="team_news">
-                <div class="col">
-                    <h2 class="mb-5">📰️ 团队新闻</h2>
-                    <div class="project">
-                        <div class="row mb-4">
-                            <div class="col-sm-12">
-                                👍 2025年12月17日，团队成员<b><u>张小龙</u></b>投往<i><u>Computers & Industrial Engineering</u></i>的论文《<i>Integration of compliant disassembly strategy and state recognition for robotic peg-hole disassembly</i>》被录用！
-                                <p></p>
-                            </div>
-                            <div class="col-sm-12">
-                                👍 2025年11月17日，团队成员<b><u>涂小飞</u></b>投往<i><u>计算机集成制造系统</u></i>的论文《<i>考虑废旧产品拆解不确定的选择性拆解任务规划</i>》被录用！
-                                <p></p>
-                            </div>
-                            <div class="col-sm-12">
-                                🚀 2025年10月14日，团队成员<b><u>张小龙</u></b>荣获比亚迪奖学金！
-                                <p></p>
-                            </div>
-                            <div class="col-sm-12">
-                                👍 2025年10月11日，团队成员<b><u>仲金山</u></b>投往<i><u>Journal of Industrial Information Integration</u></i>的论文《<i>Manufacturing process scheduling method based on multi-level and cross-chain collaboration under industrial internet environment</i>》被录用！
-                                <p></p>
-                            </div>
-                            <div class="col-sm-12">
-                                👍 2025年9月18日，团队成员<b><u>韩雨凝</u></b>投往<i><u>International Journal of Computer Integrated Manufacturing</u></i>的论文《<i>Digital Twin Modelling and its Evaluation Method of the Robotic Disassembly Process</i>》被录用！
-                                <p></p>
-                            </div>
+    <div class="row" id="team_news">
+        <div class="col">
+            <h2 class="mb-5">📰️ 团队新闻</h2>
+            <div class="project">
+                <div class="row mb-4">
+                    <div class="col-sm-12">
+                        👍 2025年12月17日，团队成员<b><u>张小龙</u></b>投往<i><u>Computers & Industrial Engineering</u></i>的论文《<i>Integration of compliant disassembly strategy and state recognition for robotic peg-hole disassembly</i>》被录用！
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12">
+                        👍 2025年11月17日，团队成员<b><u>涂小飞</u></b>投往<i><u>计算机集成制造系统</u></i>的论文《<i>考虑废旧产品拆解不确定的选择性拆解任务规划</i>》被录用！
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12">
+                        🚀 2025年10月14日，团队成员<b><u>张小龙</u></b>荣获比亚迪奖学金！
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12">
+                        👍 2025年10月11日，团队成员<b><u>仲金山</u></b>投往<i><u>Journal of Industrial Information Integration</u></i>的论文《<i>Manufacturing process scheduling method based on multi-level and cross-chain collaboration under industrial internet environment</i>》被录用！
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12">
+                        👍 2025年9月18日，团队成员<b><u>韩雨凝</u></b>投往<i><u>International Journal of Computer Integrated Manufacturing</u></i>的论文《<i>Digital Twin Modelling and its Evaluation Method of the Robotic Disassembly Process</i>》被录用！
+                        <p></p>
+                    </div>
 
-                            <div class="col-sm-12">
-                                👍 2025年9月4日，团队成员<b><u>徐振璐</u></b>投往<i><u>Robotics and Computer-Integrated Manufacturing</u></i>的论文《<i>Robotic Disassembly Sequence Dynamic Planning under Uncertain Irremovable Condition using Dueling Deep Q-Network Based on Digital Twin</i>》被录用！
-                                <p></p>
+                    <div class="col-sm-12">
+                        👍 2025年9月4日，团队成员<b><u>徐振璐</u></b>投往<i><u>Robotics and Computer-Integrated Manufacturing</u></i>的论文《<i>Robotic Disassembly Sequence Dynamic Planning under Uncertain Irremovable Condition using Dueling Deep Q-Network Based on Digital Twin</i>》被录用！
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12">
+                        👍 2025年8月13日，团队成员<b><u>张小龙</u></b>投往<i><u>International Journal of Production Research</u></i>的论文《<i>Mechanism Driven Robotic Compliant Disassembly Strategy for Disassembling Peg-holes under  Different Maintenance Conditions</i>》被录用！
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12">
+                        👍 2025年5月7日，团队成员<b><u>韩雨凝</u></b>的学位论文，顺利通过教育部盲审，成绩优秀(92分、91分)！
+                        <p></p>
+                    </div>
+                    <div class="col-sm-12">
+                        😀 Artificial Intelligence for Robotic Disassembly研究团队学术主页上线了！
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row" id="research_video">
+        <div class="col">
+            <h2 clss="mb-5"> 🎬️ 成果视频</h2>
+            <p></p>
+            <p></p>
+            <div id="projects">
+                <div class="row mb-6">
+                    <div class="col-sm-12">
+                        <div class="gallery">
+                            <img src="assets/researchimage/compliantdisassembly.png" alt="轴孔柔顺拆解" width="400" height="400"/>
+                            <div class="desc">柔顺拆解与状态识别一体化<br>
+                                <a href="assets/researchvideo/compliantdisassembly.mp4" target="_blank">[MP4]</a>
                             </div>
-                            <div class="col-sm-12">
-                                👍 2025年8月13日，团队成员<b><u>张小龙</u></b>投往<i><u>International Journal of Production Research</u></i>的论文《<i>Mechanism Driven Robotic Compliant Disassembly Strategy for Disassembling Peg-holes under  Different Maintenance Conditions</i>》被录用！
-                                <p></p>
-                            </div>
-                            <div class="col-sm-12">
-                                👍 2025年5月7日，团队成员<b><u>韩雨凝</u></b>的学位论文，顺利通过教育部盲审，成绩优秀(92分、91分)！
-                                <p></p>
-                            </div>
-                            <div class="col-sm-12">
-                                😀 Artificial Intelligence for Robotic Disassembly研究团队学术主页上线了！
-                                <p></p>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="assets/researchimage/softrobot.png" alt="软体机器人" width="400" height="400"/>
+                            <div class="desc">软体机器人运动控制<br>
+                                <a href="assets/researchvideo/softrobotics.mp4" target="_blank">[MP4]</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row" id="research">
+        <div class="col">
+            <h2 clss="mb-5">📚 学术成果</h2>
+            <p></p>
+            <p></p>
+            <div id="projects">
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            19. <b><u>Jiayi Liu</u></b>, Xiaolong Zhang, Xiaofei Tu, Wenjun Xu#, Zude Zhou.
+                            <b>Integration of compliant disassembly strategy and state recognition for robotic peg-hole disassembly. </b>
+                            <i>Computers & Industrial Engineering.</i>
+                            2026, 213, 111772.
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0360835225009180" target="_blank" rel="noopener">[PDF]</a>
+                            <a href="assets/researchvideo/compliantdisassembly.mp4" target="_blank">[MP4]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            18. <b><u>刘佳宜</u></b>, 涂小飞, 徐文君#, 王远达, 陆天慧.
+                            <b>考虑废旧产品拆解不确定的选择性拆解任务规划. </b>
+                            <i>计算机集成制造系统.</i>
+                            2025, 31(12), 4493-4512.
+                            <a href="https://doi.org/10.13196/j.cims.2024.Z19" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            17. Wenjun Xu, Jinshan Zhong, <b><u>Jiayi Liu#</u></b>, Shuang Zheng, Xianglong Zou, Feng Liu.
+                            <b>Manufacturing process scheduling method based on multi-level and cross-chain collaboration under industrial internet environment. </b>
+                            <i>Journal of Industrial Information Integration.</i>
+                            2025, 48, 100972.
+                            <a href="https://www.sciencedirect.com/science/article/pii/S2452414X25001955?via%3Dihub" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            16. Yuning Han, <b><u>Jiayi Liu#</u></b>, Lei Qi, Wenjun Xu.
+                            <b>Digital twin modelling and its evaluation method of the robotic disassembly process. </b>
+                            <i>International Journal of Computer Integrated Manufacturing.</i>
+                            2025, 1-19.
+                            <a href="https://doi.org/10.1080/0951192X.2025.2564781" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            15. <b><u>Jiayi Liu</u></b>, Zhenlu Xu, Wenjun Xu#, Lei Qi, Yuning Han, Zude Zhou.
+                            <b>Robotic disassembly sequence dynamic planning under uncertain irremovable condition using dueling deep Q-network based on digital twin. </b>
+                            <i>Robotics and Computer-Integrated Manufacturing.</i>
+                            2026, 98: 103132.
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0736584525001863" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            14. <b><u>Jiayi Liu</u></b>, Xiaolong Zhang, Wenjun Xu#, Zude Zhou.
+                            <b>Mechanism driven robotic compliant disassembly strategy for disassembling peg-holes under different maintenance conditions. </b>
+                            <i>International Journal of Production Research.</i>
+                            2025, 63(24), 10336-10354.
+                            <a href="https://www.tandfonline.com/doi/abs/10.1080/00207543.2025.2550456" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            13. 涂小飞, <b><u>刘佳宜#</u></b>, 徐文君, 张小龙, 仲金山.
+                            <b>基于改进型遗传算法的海上无人集群协同作业需求−功能动态匹配研究. </b>
+                            <i>中国舰船研究.</i>
+                            2026, 21(1), 338-349.
+                            <a href="https://www.ship-research.com/article/doi/10.19693/j.issn.1673-3185.04202" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            12. Yaping Ren#, Zhehao Xu, Yanzi Zhang, <b><u>Jiayi Liu</u></b>, Leilei Meng, Wenwen Lin.
+                            <b>A rollout heuristic-reinforcement learning hybrid algorithm for disassembly sequence planning with uncertain depreciation condition and diversified recovering strategies. </b>
+                            <i>Advanced Engineering Informatics.</i>
+                            2025, 64, 103082.
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S147403462400733X" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            11. <b><u>Jiayi Liu</u></b>, Zhenlu Xu, Heng Xiong, Qiwen Lin, Wenjun Xu#, Zude Zhou.
+                            <b>Digital twin-driven robotic disassembly sequence dynamic planning under uncertain missing condition. </b>
+                            <i>IEEE Transactions on Industrial Informatics.</i>
+                            2023, 19(12), 11846-11855.
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10061267" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            10. Wenjun Xu, Zhihao Li, <b><u>Jiayi Liu#</u></b>, Jia Cui, Yang Hu.
+                            <b>Virtual reconfiguration method of robotic mixed-model assembly line using bees algorithm based on digital twin. </b>
+                            <i>IEEE Transactions on Automation Science and Engineering.</i>
+                            2023, 21(3), 2211-2222.
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10251131" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            9. Wenjun Xu, Jia Cui, Bin Liu, <b><u>Jiayi Liu#</u></b>, Bitao Yao, Zude Zhou.
+                            <b>Human-robot collaborative disassembly line balancing considering the safe strategy in remanufacturing. </b>
+                            <i>Journal of Cleaner Production.</i>
+                            2021, 324, 129158.
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0959652621033448" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            8. <b><u>Jiayi Liu</u></b>, Zude Zhou, Duc Truong Pham, Wenjun Xu#, Jia Cui, Can Yang.
+                            <b>Service platform for robotic disassembly planning in remanufacturing. </b>
+                            <i>Journal of Manufacturing Systems.</i>
+                            2020, 57, 338-356.
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0278612520301746" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            7. Wenjun Xu, Quan Tang, <b><u>Jiayi Liu#</u></b>, Zhihao Liu, Zude Zhou, Duc Truong Pham.
+                            <b>Disassembly sequence planning using discrete Bees algorithm for human-robot collaboration in remanufacturing. </b>
+                            <i>Robotics and computer-integrated manufacturing.</i>
+                            2020, 62, 101860.
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0736584519301887" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            6. <b><u>Jiayi Liu</u></b>, Zude Zhou, Duc Truong Pham, Wenjun Xu#, Chunqian Ji, Quan Liu.
+                            <b>Collaborative optimization of robotic disassembly sequence planning and robotic disassembly line balancing problem using improved discrete Bees algorithm in remanufacturing. </b>
+                            <i>Robotics and computer-integrated manufacturing.</i>
+                            2020, 61, 101829.
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0736584518300516" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            5. Zude Zhou, <b><u>Jiayi Liu</u></b>, Duc Truong Pham, Wenjun Xu#, F. Javier Ramírez, Chunqian Ji, Quan Liu.
+                            <b>Disassembly sequence planning: Recent developments and future trends. </b>
+                            <i>Proceedings of the Institution of Mechanical Engineers Part B Journal of Engineering Manufacture.</i>
+                            2019, 233(5), 1450-1471.
+                            <a href="https://sage.cnpereading.com/paragraph/article/?doi=10.1177/0954405418789975" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            4. <b><u>Jiayi Liu#</u></b>, Zude Zhou, Wenjun Xu, Jiwei Hu.
+                            <b>Adaptive support-weight stereo-matching approach with two disparity refinement steps. </b>
+                            <i>IETE Journal of Research.</i>
+                            2019, 65(3), 310-319.
+                            <a href="https://www.tandfonline.com/doi/abs/10.1080/03772063.2018.1431061" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            3. <b><u>Jiayi Liu</u></b>, Zude Zhou, Duc Truong Pham, Wenjun Xu, Junwei Yan#, Aiming Liu, Chunqian Ji, Quan Liu.
+                            <b>An improved multi-objective discrete bees algorithm for robotic disassembly line balancing problem in remanufacturing.</b>
+                            <i>The International Journal of Advanced Manufacturing Technology.</i>
+                            2018, 97(9), 3937-3962.
+                            <a href="https://link.springer.com/article/10.1007/s00170-018-2183-7" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            2. <b><u>Jiayi Liu</u></b>, Zude Zhou, Duc Truong Pham, Wenjun Xu#, Chunqian Ji, Quan Liu.
+                            <b>Robotic disassembly sequence planning using enhanced discrete bees algorithm in remanufacturing.</b>
+                            <i>International Journal of Production Research.</i>
+                            2018, 56(9), 3134-3151.
+                            <a href="https://www.tandfonline.com/doi/abs/10.1080/00207543.2017.1412527" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            1. <b><u>Jiayi Liu</u></b>, Zude Zhou, Guoping Ding#, Huaqiang Wang.
+                            <b>Dynamic Magnetic Field Measurement in the Air Gap of Magnetic Bearings Based on FBG-GMM Sensor.</b>
+                            <i>Journal of the Optical Society of Korea.</i>
+                            2015, 19(6), 575-585.
+                            <a href="https://opg.optica.org/josk/abstract.cfm?uri=josk-19-6-575" target="_blank" rel="noopener">[PDF]</a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Student section -->
+
+    <hr />
+
+    <div class="row" id="gallery">
+        <div class="col">
+            <h2 class="mb-5">🧑‍🤝‍🧑 团队成员</h2>
+            <div class="project">
+                <div class="row mb-6">
+                    <div class="col-sm-12">
+                        <b>👥 在读学生</b>
+                        <p></p>
+                        <b>2025级博士</b>
+                        <p></p>
+                        <div class="gallery">
+                            <img src="assets/memo/xiangyuguang.jpg" alt="向宇光" width="800" height="600"/>
+                            <div class="desc">向宇光</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <p></p>
+                        <b>2023级硕士</b>
+                        <p></p>
+                        <div class="gallery">
+                            <img src="assets/memo/zhangxiaolong.jpg" alt="张小龙" width="800" height="600"/>
+                            <div class="desc">张小龙</div>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="assets/memo/tuxiaofei.jpg" alt="涂小飞" width="800" height="600"/>
+                            <div class="desc">涂小飞</div>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="assets/memo/zhongjinshan.jpg" alt="仲金山" width="800" height="600"/>
+                            <div class="desc">仲金山</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <p></p>
+                        <b>2024级硕士</b>
+                        <p></p>
+                        <div class="gallery">
+                            <img src="assets/memo/wangyuanda.jpg" alt="王远达" width="800" height="600"/>
+                            <div class="desc">王远达</div>
+                        </div>
+                        <p></p>
+                        <div class="gallery">
+                            <img src="assets/memo/lutianhui.jpg" alt="陆天慧" width="800" height="600"/>
+                            <div class="desc">陆天慧</div>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="assets/memo/panhongchen.jpg" alt="潘红臣" width="800" height="600"/>
+                            <div class="desc">潘红臣</div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <p></p>
+                        <b>2025级硕士</b>
+                        <p></p>
+                        <div class="gallery">
+                            <img src="assets/memo/maozhurui.jpg" alt="毛朱睿" width="800" height="600"/>
+                            <div class="desc">毛朱睿</div>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="assets/memo/wanghongyu.jpg" alt="王宏钰" width="800" height="600"/>
+                            <div class="desc">王宏钰</div>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="assets/memo/liuruihao.jpg" alt="刘瑞浩" width="800" height="600"/>
+                            <div class="desc">刘瑞浩</div>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="assets/memo/linyuhang.jpg" alt="林宇航" width="800" height="600"/>
+                            <div class="desc">林宇航</div>
+                        </div>
+                        <div class="gallery">
+                            <img src="assets/memo/guoruiqiang.jpg" alt="郭瑞强" width="800" height="600"/>
+                            <div class="desc">郭瑞强</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <hr />
-
-            <div class="row" id="research_video">
-                <div class="col">
-                    <h2 clss="mb-5"> 🎬️ 成果视频</h2>
-                    <p></p>
-                    <p></p>
-                    <div id="projects">
-                        <div class="row mb-6">
-                            <div class="col-sm-12">
-                                <div class="gallery">
-                                    <img src="assets/researchimage/compliantdisassembly.png" alt="轴孔柔顺拆解" width="400" height="400"/>
-                                    <div class="desc">柔顺拆解与状态识别一体化<br>
-                                        <a href="assets/researchvideo/compliantdisassembly.mp4" target="_blank">[MP4]</a>
-                                    </div>
-                                </div>
-
-                                <div class="gallery">
-                                    <img src="assets/researchimage/softrobot.png" alt="软体机器人" width="400" height="400"/>
-                                    <div class="desc">软体机器人运动控制<br>
-                                        <a href="assets/researchvideo/softrobotics.mp4" target="_blank">[MP4]</a>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="project">
+                <div class="row mb-4">
+                    <div class="col-sm-12">
+                        <p></p>
+                        <b>本科生（含本硕班）</b>
+                        <p></p>
+                        <div class="gallery">
+                            <img src="assets/memo/taoye.jpg" alt="陶冶" width="800" height="600"/>
+                            <div class="desc">陶冶</div>
                         </div>
+
+                        <div class="gallery">
+                            <img src="assets/memo/yujunjie.jpg" alt="喻俊杰" width="800" height="600"/>
+                            <div class="desc">喻俊杰</div>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="assets/memo/chenmuzi.jpg" alt="陈木子" width="800" height="600"/>
+                            <div class="desc">陈木子</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <p></p>
+                        <b>👥 毕业学生</b>
+                        <p></p>
+                        <b>2026届硕士</b>：张小龙（比亚迪奖学金1次；就业，阿里巴巴集团控股有限公司）；涂小飞（就业，华为技术有限公司）
+                        <p></p>
+                        <b>2026届硕士（协助指导）</b>：仲金山（就业，华为技术有限公司）
+                        <p></p>
+                        <p></p>
+                        <b>2025届硕士</b>：徐振璐（国家奖学金2次，比亚迪奖学金1次；就业，华为技术有限公司）; 韩雨凝（就业，中航航空电子有限公司）
+                        <p></p>
+                        <b>2025届硕士（协助指导）</b>：王睿章（就业，比亚迪股份有限公司）; 管茂霖（就业，比亚迪股份有限公司）；刘云光（就业，公务员-湖北省委组织部选调生）；丁杰（就业，中兴通讯股份有限公司）
+                        <p></p>
+                        <b>2023届本科</b>：李伯羽（保研直博；浙江大学）；熊恒（保研；华南理工大学）；林啓文（保研；华中科技大学）
                         <p></p>
                     </div>
                 </div>
             </div>
 
-            <hr />
-
-<div class="row" id="research">
-    <div class="col">
-        <h2 clss="mb-5">📚 学术成果</h2>
-        <p></p>
-        <p></p>
-        <div id="projects">
-		    <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        19. <b><u>Jiayi Liu</u></b>, Xiaolong Zhang, Xiaofei Tu, Wenjun Xu#, Zude Zhou.
-                        <b>Integration of compliant disassembly strategy and state recognition for robotic peg-hole disassembly. </b>
-                        <i>Computers & Industrial Engineering.</i>
-                        2026, 213, 111772.
-                        <a href="https://www.sciencedirect.com/science/article/pii/S0360835225009180" target="_blank" rel="noopener">[PDF]</a>
-                        <a href="assets/researchvideo/compliantdisassembly.mp4" target="_blank">[MP4]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-			
-			<div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        18. <b><u>刘佳宜</u></b>, 涂小飞, 徐文君#, 王远达, 陆天慧.
-                        <b>考虑废旧产品拆解不确定的选择性拆解任务规划. </b>
-                        <i>计算机集成制造系统.</i>
-                        2025, 31(12), 4493-4512.
-                        <a href="https://doi.org/10.13196/j.cims.2024.Z19" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-			
-			<div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        17. Wenjun Xu, Jinshan Zhong, <b><u>Jiayi Liu#</u></b>, Shuang Zheng, Xianglong Zou, Feng Liu.
-                        <b>Manufacturing process scheduling method based on multi-level and cross-chain collaboration under industrial internet environment. </b>
-                        <i>Journal of Industrial Information Integration.</i>
-                        2025, 48, 100972.
-                        <a href="https://www.sciencedirect.com/science/article/pii/S2452414X25001955?via%3Dihub" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-			
-			<div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        16. Yuning Han, <b><u>Jiayi Liu#</u></b>, Lei Qi, Wenjun Xu.
-                        <b>Digital twin modelling and its evaluation method of the robotic disassembly process. </b>
-                        <i>International Journal of Computer Integrated Manufacturing.</i>
-                        2025, 1-19.
-                        <a href="https://doi.org/10.1080/0951192X.2025.2564781" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        15. <b><u>Jiayi Liu</u></b>, Zhenlu Xu, Wenjun Xu#, Lei Qi, Yuning Han, Zude Zhou.
-                        <b>Robotic disassembly sequence dynamic planning under uncertain irremovable condition using dueling deep Q-network based on digital twin. </b>
-                        <i>Robotics and Computer-Integrated Manufacturing.</i>
-                        2026, 98: 103132.
-                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0736584525001863" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        14. <b><u>Jiayi Liu</u></b>, Xiaolong Zhang, Wenjun Xu#, Zude Zhou.
-                        <b>Mechanism driven robotic compliant disassembly strategy for disassembling peg-holes under different maintenance conditions. </b>
-                        <i>International Journal of Production Research.</i>
-                        2025, 63(24), 10336-10354.
-                        <a href="https://www.tandfonline.com/doi/abs/10.1080/00207543.2025.2550456" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        13. 涂小飞, <b><u>刘佳宜#</u></b>, 徐文君, 张小龙, 仲金山.
-                        <b>基于改进型遗传算法的海上无人集群协同作业需求−功能动态匹配研究. </b>
-                        <i>中国舰船研究.</i>
-                        2026, 21(1), 338-349.
-                        <a href="https://www.ship-research.com/article/doi/10.19693/j.issn.1673-3185.04202" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        12. Yaping Ren#, Zhehao Xu, Yanzi Zhang, <b><u>Jiayi Liu</u></b>, Leilei Meng, Wenwen Lin.
-                        <b>A rollout heuristic-reinforcement learning hybrid algorithm for disassembly sequence planning with uncertain depreciation condition and diversified recovering strategies. </b>
-                        <i>Advanced Engineering Informatics.</i>
-                        2025, 64, 103082.
-                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S147403462400733X" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        11. <b><u>Jiayi Liu</u></b>, Zhenlu Xu, Heng Xiong, Qiwen Lin, Wenjun Xu#, Zude Zhou.
-                        <b>Digital twin-driven robotic disassembly sequence dynamic planning under uncertain missing condition. </b>
-                        <i>IEEE Transactions on Industrial Informatics.</i>
-                        2023, 19(12), 11846-11855.
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10061267" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        10. Wenjun Xu, Zhihao Li, <b><u>Jiayi Liu#</u></b>, Jia Cui, Yang Hu.
-                        <b>Virtual reconfiguration method of robotic mixed-model assembly line using bees algorithm based on digital twin. </b>
-                        <i>IEEE Transactions on Automation Science and Engineering.</i>
-                        2023, 21(3), 2211-2222.
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10251131" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        9. Wenjun Xu, Jia Cui, Bin Liu, <b><u>Jiayi Liu#</u></b>, Bitao Yao, Zude Zhou.
-                        <b>Human-robot collaborative disassembly line balancing considering the safe strategy in remanufacturing. </b>
-                        <i>Journal of Cleaner Production.</i>
-                        2021, 324, 129158.
-                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0959652621033448" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        8. <b><u>Jiayi Liu</u></b>, Zude Zhou, Duc Truong Pham, Wenjun Xu#, Jia Cui, Can Yang.
-                        <b>Service platform for robotic disassembly planning in remanufacturing. </b>
-                        <i>Journal of Manufacturing Systems.</i>
-                        2020, 57, 338-356.
-                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0278612520301746" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        7. Wenjun Xu, Quan Tang, <b><u>Jiayi Liu#</u></b>, Zhihao Liu, Zude Zhou, Duc Truong Pham.
-                        <b>Disassembly sequence planning using discrete Bees algorithm for human-robot collaboration in remanufacturing. </b>
-                        <i>Robotics and computer-integrated manufacturing.</i>
-                        2020, 62, 101860.
-                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0736584519301887" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        6. <b><u>Jiayi Liu</u></b>, Zude Zhou, Duc Truong Pham, Wenjun Xu#, Chunqian Ji, Quan Liu.
-                        <b>Collaborative optimization of robotic disassembly sequence planning and robotic disassembly line balancing problem using improved discrete Bees algorithm in remanufacturing. </b>
-                        <i>Robotics and computer-integrated manufacturing.</i>
-                        2020, 61, 101829.
-                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0736584518300516" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        5. Zude Zhou, <b><u>Jiayi Liu</u></b>, Duc Truong Pham, Wenjun Xu#, F. Javier Ramírez, Chunqian Ji, Quan Liu.
-                        <b>Disassembly sequence planning: Recent developments and future trends. </b>
-                        <i>Proceedings of the Institution of Mechanical Engineers Part B Journal of Engineering Manufacture.</i>
-                        2019, 233(5), 1450-1471.
-                        <a href="https://sage.cnpereading.com/paragraph/article/?doi=10.1177/0954405418789975" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        4. <b><u>Jiayi Liu#</u></b>, Zude Zhou, Wenjun Xu, Jiwei Hu.
-                        <b>Adaptive support-weight stereo-matching approach with two disparity refinement steps. </b>
-                        <i>IETE Journal of Research.</i>
-                        2019, 65(3), 310-319.
-                        <a href="https://www.tandfonline.com/doi/abs/10.1080/03772063.2018.1431061" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        3. <b><u>Jiayi Liu</u></b>, Zude Zhou, Duc Truong Pham, Wenjun Xu, Junwei Yan#, Aiming Liu, Chunqian Ji, Quan Liu.
-                        <b>An improved multi-objective discrete bees algorithm for robotic disassembly line balancing problem in remanufacturing.</b>
-                        <i>The International Journal of Advanced Manufacturing Technology.</i>
-                        2018, 97(9), 3937-3962.
-                        <a href="https://link.springer.com/article/10.1007/s00170-018-2183-7" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        2. <b><u>Jiayi Liu</u></b>, Zude Zhou, Duc Truong Pham, Wenjun Xu#, Chunqian Ji, Quan Liu.
-                        <b>Robotic disassembly sequence planning using enhanced discrete bees algorithm in remanufacturing.</b>
-                        <i>International Journal of Production Research.</i>
-                        2018, 56(9), 3134-3151.
-                        <a href="https://www.tandfonline.com/doi/abs/10.1080/00207543.2017.1412527" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        1. <b><u>Jiayi Liu</u></b>, Zude Zhou, Guoping Ding#, Huaqiang Wang.
-                        <b>Dynamic Magnetic Field Measurement in the Air Gap of Magnetic Bearings Based on FBG-GMM Sensor.</b>
-                        <i>Journal of the Optical Society of Korea.</i>
-                        2015, 19(6), 575-585.
-                        <a href="https://opg.optica.org/josk/abstract.cfm?uri=josk-19-6-575" target="_blank" rel="noopener">[PDF]</a>
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-
 
         </div>
-        <p></p>
     </div>
+
+    <!-- Footer section -->
+
+    <div>‎</div>
+    <hr />
+
+    <footer class="pt-2 my-md-2 pt-md-">
+        <div class="row justify-content-center">
+            <div class="col-7 col-md text-left align-self-center">
+                <p class="h6">📈主页访问人数统计：<img src="https://visitor-badge.laobi.icu/badge?page_id=jiayiliu-whut&color=007ec6" alt="访客"/></p>
+            </div>
+            <div class="col col-md text-right">
+
+
+            </div>
+        </div>
+        <p></p>
+    </footer>
+
+
 </div>
 
-<!-- Student section -->
+<!-- Bootstrap core JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<hr />
+<!-- Isotope JS -->
+<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.2/dist/isotope.pkgd.min.js"></script>
 
-<div class="row" id="gallery">
-    <div class="col">
-        <h2 class="mb-5">🧑‍🤝‍🧑 团队成员</h2>
-        <div class="project">
-            <div class="row mb-6">
-                <div class="col-sm-12">
-                    <b>👥 在读学生</b>
-                    <p></p>
-                    <b>2025级博士</b>
-                    <p></p>
-                    <div class="gallery">
-                        <img src="assets/memo/xiangyuguang.jpg" alt="向宇光" width="800" height="600"/>
-                        <div class="desc">向宇光</div>
-                    </div>
-                </div>
+<!-- OwlCarousel2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-                <div class="col-sm-12">
-                    <p></p>
-                    <b>2023级硕士</b>
-                    <p></p>
-                    <div class="gallery">
-                        <img src="assets/memo/zhangxiaolong.jpg" alt="张小龙" width="800" height="600"/>
-                        <div class="desc">张小龙</div>
-                    </div>
+<!-- Axios JS -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-                    <div class="gallery">
-                        <img src="assets/memo/tuxiaofei.jpg" alt="涂小飞" width="800" height="600"/>
-                        <div class="desc">涂小飞</div>
-                    </div>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
-                    <div class="gallery">
-                        <img src="assets/memo/zhongjinshan.jpg" alt="仲金山" width="800" height="600"/>
-                        <div class="desc">仲金山</div>
-                    </div>
-                </div>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 
-                <div class="col-sm-12">
-                    <p></p>
-                    <b>2024级硕士</b>
-                    <p></p>
-                    <div class="gallery">
-                        <img src="assets/memo/wangyuanda.jpg" alt="王远达" width="800" height="600"/>
-                        <div class="desc">王远达</div>
-                    </div>
-                    <p></p>
-                    <div class="gallery">
-                        <img src="assets/memo/lutianhui.jpg" alt="陆天慧" width="800" height="600"/>
-                        <div class="desc">陆天慧</div>
-                    </div>
-
-                    <div class="gallery">
-                        <img src="assets/memo/panhongchen.jpg" alt="潘红臣" width="800" height="600"/>
-                        <div class="desc">潘红臣</div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12">
-                    <p></p>
-                    <b>2025级硕士</b>
-                    <p></p>
-                    <div class="gallery">
-                        <img src="assets/memo/maozhurui.jpg" alt="毛朱睿" width="800" height="600"/>
-                        <div class="desc">毛朱睿</div>
-                    </div>
-
-                    <div class="gallery">
-                        <img src="assets/memo/wanghongyu.jpg" alt="王宏钰" width="800" height="600"/>
-                        <div class="desc">王宏钰</div>
-                    </div>
-
-                    <div class="gallery">
-                        <img src="assets/memo/liuruihao.jpg" alt="刘瑞浩" width="800" height="600"/>
-                        <div class="desc">刘瑞浩</div>
-                    </div>
-
-                    <div class="gallery">
-                        <img src="assets/memo/linyuhang.jpg" alt="林宇航" width="800" height="600"/>
-                        <div class="desc">林宇航</div>
-                    </div>
-                    <div class="gallery">
-                        <img src="assets/memo/guoruiqiang.jpg" alt="郭瑞强" width="800" height="600"/>
-                        <div class="desc">郭瑞强</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="row mb-4">
-                <div class="col-sm-12">
-                    <p></p>
-                    <b>本科生（含本硕班）</b>
-                    <p></p>
-                    <div class="gallery">
-                        <img src="assets/memo/taoye.jpg" alt="陶冶" width="800" height="600"/>
-                        <div class="desc">陶冶</div>
-                    </div>
-
-                    <div class="gallery">
-                        <img src="assets/memo/yujunjie.jpg" alt="喻俊杰" width="800" height="600"/>
-                        <div class="desc">喻俊杰</div>
-                    </div>
-
-                    <div class="gallery">
-                        <img src="assets/memo/chenmuzi.jpg" alt="陈木子" width="800" height="600"/>
-                        <div class="desc">陈木子</div>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <p></p>
-                    <b>👥 毕业学生</b>
-                    <p></p>
-                    <b>2022级硕士</b>：徐振璐（国家奖学金2次，比亚迪奖学金1次；就业，华为技术有限公司）; 韩雨凝（就业，中航航空电子有限公司）
-                    <p></p>
-                    <b>2022级硕士（协助指导）</b>：王睿章（就业，比亚迪股份有限公司）; 管茂霖（就业，比亚迪股份有限公司）；刘云光（就业，公务员-湖北省委组织部选调生）；丁杰（就业，中兴通讯股份有限公司）
-                    <p></p>
-                    <b>2023级本科</b>：李伯羽（保研直博；浙江大学）；熊恒（保研；华南理工大学）；林啓文（保研；华中科技大学）
-                    <p></p>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</div>
-
-<!-- Footer section -->
-
-<div>‎</div>
-<hr />
-
-<footer class="pt-2 my-md-2 pt-md-">
-    <div class="row justify-content-center">
-        <div class="col-7 col-md text-left align-self-center">
-            <p class="h6">📈主页访问人数统计：<img src="https://visitor-badge.laobi.icu/badge?page_id=jiayiliu-whut&color=007ec6" alt="访客"/></p>
-        </div>
-        <div class="col col-md text-right">
-
-            
-        </div>
-    </div>
-    <p></p>
-</footer>
-
-
-        </div>
-
-        <!-- Bootstrap core JS-->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Isotope JS -->
-        <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.2/dist/isotope.pkgd.min.js"></script>
-
-        <!-- OwlCarousel2 JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-        <!-- Axios JS -->
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-		<!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-
-		<!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-
-    </body>
+</body>
 </html>
